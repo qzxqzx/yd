@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="css/reset.min.css"/>
     <link rel="stylesheet" href="css/swiper.min.css"/>
     <link rel="stylesheet" href="css/index.css"/>
-	<style>
-	html{
-	font-size:100px;
-	}
-	</style>
+    <style>
+        html{
+            font-size: 100px;
+        }
+    </style>
     <script>
-        document.documentElement.style.fontSize=document.documentElement.clientWidth/1136*100+'px';
+        document.documentElement.style.fontSize=document.documentElement.clientWidth/640*100+'px';
     </script>
 </head>
 <body>
@@ -28,9 +28,9 @@
             <div class="swiper-slide slide1">
                 <div class="yuan">
                     <div class="words">
-                        <span style="margin-bottom: 5px">简</span>
+                        <span style="margin-bottom: 3px">简</span>
                         <span class="abc">R&nbsp; &nbsp;E&nbsp; &nbsp;S&nbsp; &nbsp;U&nbsp; &nbsp;M&nbsp; &nbsp;E</span>
-                        <span style="margin-top: 5px">历</span>
+                        <span style="margin-top: 3px">历</span>
                     </div>
 
                 </div>
@@ -161,6 +161,7 @@
     new Swiper(".swiper-container", {
         direction: "vertical",
         loop: true,
+        effect:'flip',
         onSlideChangeEnd: function (swiper) {
             var slideAry = swiper.slides,//获取当前所有活动块(包含loop模式下前后添加的两个模块)
                     curIn = swiper.activeIndex,//获取当前展示活动块的索引
